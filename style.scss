@@ -16,9 +16,12 @@ body{
 .floatRight{
   float: right;
 }
+.hidden{
+  display: none;
+}
 //container define
 .container{
-  padding: 1% 5%;
+  // padding: 1% 5%;
 }
 .alignCenter{
   text-align: center;
@@ -120,10 +123,14 @@ header{
   padding: 0.1rem 1rem;
 }
 .navbar{
-  padding: .5rem 10%;
+  padding: .5rem 0;
   background-color: #29b078;
 }
+.navbar-brand{
+  margin-left: 10%;
+}
 .navbar-toggler-icon{
+  margin-right: 10%;
   width: 3rem;
   height: 3rem;
   background: url('images/toggler.png') no-repeat center;
@@ -137,8 +144,16 @@ header{
   }
 }
 .navbar-list{
-  margin-top: 1rem;
-  display: none;
+  margin-top: 0.5rem;
+  background-color: #29b078;
+  text-align: center;
+  width: 100%;
+  .nav-item{
+    margin: auto;
+    width: 4rem;
+    display: block;
+    padding: 0.5rem 0;
+  }
   a:hover{
     border-bottom: 3px solid white;
   }
@@ -146,14 +161,19 @@ header{
 @media (min-width:663px) {
   .navbar-list{
     display: inline-block;
+    margin-top: 1rem;
+    width: auto;
+    .nav-item{
+      display: inline-block;
+    }
   }
 }
 
 //footer
-/* footer */
 footer{
   background-color: #26a26f;
   font-size: .7rem;
+  overflow: hidden;
 }
 table{
   font-size: .7rem;
@@ -162,7 +182,7 @@ table{
   width: 100%;
 }
 td{
-  padding: 10px;
+  padding: 4px 1px;
 }
 table a:link{
   color: white;
@@ -340,9 +360,9 @@ p{
 }
 .img-content{
   min-height: 120px;
-  padding-left: 8rem;
+  padding-left: 30%;
   background: url('images/cooperations_20.png') no-repeat left;
-  background-size: 8rem;
+  background-size: 30%;
 }
 .col-sm-9{
   p{

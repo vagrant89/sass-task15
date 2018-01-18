@@ -5,6 +5,7 @@
     <title>homepage</title>
     <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" href="style.min.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <header>
@@ -20,8 +21,8 @@
       </div>
       <nav class="navbar">
         <a class="navbar-brand" href="http://www.jnshu.com"> <img src="images/cooperations_13.png" alt="jnshu"> </a>
-        <button class="navbar-toggler-icon floatRight" type="button"></button>
-          <div class="navbar-list floatRight">
+        <button class="navbar-toggler-icon floatRight" type="button" id="togglerButton" onclick="togglerButton()"></button>
+          <div id="togglerList" class="navbar-list floatRight hidden">
             <a class="nav-item nav-link" href="index.html">首页</a>
             <a class="nav-item nav-link" href="">职业</a>
             <a class="nav-item nav-link" href="cooperations.html">推荐</a>
@@ -167,7 +168,37 @@
         </div>
       </div>
     </main>
-
+    <footer>
+      <div class="container">
+          <div class="col-sm-9">
+            <table>
+              <tr>
+                <td>技能树————改变你我</td>
+                <td colspan="2">旗下网站</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><a href="#">打打打孵化器</a></td>
+                <td><a href="#">最强it特训营</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">关于我们</a>|<a href="#">联系我们</a>|<a href="#">友情链接</a></td>
+                <td><a href="#">葡萄藤轻游戏</a></td>
+                <td><a href="#">桌游精灵</a></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-3">
+            <div class="wechat-qr">
+              <span>微信公众平台</span>
+              <img src="images/cooperations_24.png" alt="">
+            </div>
+          </div>
+        <div class="row copyright">
+          Copyright ©2015 北京葡萄藤信息技术有限公司 All Rights Reserved | 京ICP备15035574号-1
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
